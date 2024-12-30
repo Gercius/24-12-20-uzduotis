@@ -1,0 +1,13 @@
+{
+    "name": "24-12-13",
+    "version": "1.0.0",
+    "main": "main.js",
+    "type": "module",
+    "scripts": {
+        "dev": "sass --watch styles/sass:styles/css"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}

@@ -1,0 +1,36 @@
+@use "../abstracts" as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    font-family: $font-stack;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+label {
+    display: block;
+}
+
+button,
+label,
+input {
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
