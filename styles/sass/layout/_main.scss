@@ -1,0 +1,42 @@
+@use "../abstracts" as *;
+
+main {
+    margin-top: 10rem;
+    display: flex;
+    column-gap: 5rem;
+
+    @media (max-width: 1100px) {
+        flex-direction: column;
+        margin-top: 5rem;
+
+        .search {
+            text-align: center;
+        }
+
+        .search-results .placeholder-img {
+            display: none;
+        }
+    }
+
+    @media (max-width: 800px) {
+    }
+
+    & div {
+        flex: 1 1 50%;
+    }
+
+    .search {
+        h1 {
+            font-size: $font-h1;
+            color: $text-orange;
+            font-weight: 500;
+        }
+    }
+
+    .search-results {
+        .placeholder-img {
+            margin-top: 2rem;
+            border-radius: 20px;
+        }
+    }
+}

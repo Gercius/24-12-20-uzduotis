@@ -4,3 +4,7 @@
 @use "./base/typography";
 
 @use "./layout/container";
+@use "./layout/header";
+@use "./layout/main";
+
+@use "./components/search-form";

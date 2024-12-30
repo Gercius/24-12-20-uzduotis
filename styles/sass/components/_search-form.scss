@@ -1,0 +1,45 @@
+@use "../abstracts" as *;
+
+form {
+    margin-top: 2rem;
+
+    label {
+        font-size: $font-p1;
+        color: $text-gray;
+        letter-spacing: 2px;
+    }
+
+    input {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        border-radius: 10px;
+        border-color: unset;
+        color: $text-gray;
+        font-size: $font-input;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button {
+        background-color: $bg-orange;
+        color: $text-light;
+        margin-top: 2rem;
+        display: block;
+        font-size: $font-p1;
+        font-weight: 600;
+        padding: 1.5rem 2rem;
+        line-height: 0;
+        border: none;
+        border-radius: 100px;
+
+        &:hover {
+            background-color: $bg-orange-dark;
+        }
+
+        @media (max-width: 1100px) {
+            margin: 1.25rem auto;
+        }
+    }
+}

@@ -3,7 +3,27 @@
 */
 $font-stack: system-ui, sans-serif;
 
+$font-h1: clamp(3rem, 10vw, 5rem);
+
+$font-p1: 1.25rem;
+
+$font-input: 1rem;
+
+$font-span: clamp(1.5rem, 2.5vw, 2rem);
+
+$text-gray-dark: #383f50;
+$text-gray: #4b566b;
+$text-orange: #e6492a;
+$text-light: #ffffff;
+
+/*
+    Backgrounds
+*/
+
+$bg-orange: #e6492a;
+$bg-orange-dark: #ad361e;
+
 /*
     Container properties
 */
-$ctn-max-width: 1000px;
+$ctn-max-width: 1440px;
