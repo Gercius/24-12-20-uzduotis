@@ -42,6 +42,10 @@ a {
   text-decoration: none;
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   font-family: system-ui, sans-serif;
 }
@@ -75,14 +79,13 @@ header div span {
 }
 
 main {
-  margin-top: 10rem;
+  margin-top: 5rem;
   display: flex;
   column-gap: 5rem;
 }
 @media (max-width: 1100px) {
   main {
     flex-direction: column;
-    margin-top: 5rem;
   }
   main .search {
     text-align: center;
@@ -137,6 +140,9 @@ form button {
 }
 form button:hover {
   background-color: #ad361e;
+}
+form button:disabled {
+  background-color: gray;
 }
 @media (max-width: 1100px) {
   form button {

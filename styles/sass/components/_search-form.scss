@@ -38,6 +38,10 @@ form {
             background-color: $bg-orange-dark;
         }
 
+        &:disabled {
+            background-color: $bg-disabled;
+        }
+
         @media (max-width: 1100px) {
             margin: 1.25rem auto;
         }

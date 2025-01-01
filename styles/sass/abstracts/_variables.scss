@@ -4,6 +4,7 @@
 $font-stack: system-ui, sans-serif;
 
 $font-h1: clamp(3rem, 10vw, 5rem);
+$font-h3: 2rem;
 
 $font-p1: 1.25rem;
 
@@ -22,6 +23,7 @@ $text-light: #ffffff;
 
 $bg-orange: #e6492a;
 $bg-orange-dark: #ad361e;
+$bg-disabled: gray;
 
 /*
     Container properties
