@@ -110,12 +110,15 @@ main .search-results .placeholder-img {
 form {
   margin-top: 2rem;
 }
-form label {
+form .form-field:last-of-type {
+  margin-top: 0.5rem;
+}
+form .form-field label {
   font-size: 1.25rem;
   color: #4b566b;
   letter-spacing: 2px;
 }
-form input {
+form .form-field input {
   margin-top: 1rem;
   padding: 0.5rem;
   border-radius: 10px;
@@ -123,7 +126,7 @@ form input {
   color: #4b566b;
   font-size: 1rem;
 }
-form input:focus {
+form .form-field input:focus {
   outline: none;
 }
 form button {
@@ -148,6 +151,15 @@ form button:disabled {
   form button {
     margin: 1.25rem auto;
   }
+}
+
+.error-msg {
+  color: red;
+}
+
+.general-error {
+  font-size: 2rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

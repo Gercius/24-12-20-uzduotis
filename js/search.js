@@ -13,7 +13,6 @@ export function searchMovie() {
     // Handle search
     searchButton.addEventListener("click", async (e) => {
         e.preventDefault();
-        searchResultsEl.textContent = "Ieškoma...";
         const data = await getMovie(searchBar.value);
         renderMovieCard(data);
         searchBar.value = "";
@@ -22,7 +21,8 @@ export function searchMovie() {
 
     function renderMovieCard(data) {
         if (!data.Title) {
-            searchResultsEl.innerHTML = "Tokio filmo duomenų bazėje nėra";
+            searchResultsEl.textContent = "";
+            document.querySelector(".general-error").textContent = "Tokio filmo duomenų bazėje nėra!";
             return;
         }
 

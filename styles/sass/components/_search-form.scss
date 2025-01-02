@@ -3,22 +3,28 @@
 form {
     margin-top: 2rem;
 
-    label {
-        font-size: $font-p1;
-        color: $text-gray;
-        letter-spacing: 2px;
-    }
+    .form-field {
+        &:last-of-type {
+            margin-top: 0.5rem;
+        }
 
-    input {
-        margin-top: 1rem;
-        padding: 0.5rem;
-        border-radius: 10px;
-        border-color: unset;
-        color: $text-gray;
-        font-size: $font-input;
+        label {
+            font-size: $font-p1;
+            color: $text-gray;
+            letter-spacing: 2px;
+        }
 
-        &:focus {
-            outline: none;
+        input {
+            margin-top: 1rem;
+            padding: 0.5rem;
+            border-radius: 10px;
+            border-color: unset;
+            color: $text-gray;
+            font-size: $font-input;
+
+            &:focus {
+                outline: none;
+            }
         }
     }
 

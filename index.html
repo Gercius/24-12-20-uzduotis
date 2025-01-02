@@ -19,8 +19,15 @@
                 <div class="search">
                     <h1>Suraskite savo filmą</h1>
                     <form action="">
-                        <label for="search">Filmo pavadinimas</label>
-                        <input type="text" name="search" placeholder="The Room" />
+                        <div class="form-field">
+                            <label for="api-key">API raktas</label>
+                            <input class="api-key" type="text" name="api-key" />
+                            <p class="api-key-error error-msg"></p>
+                        </div>
+                        <div class="form-field">
+                            <label for="search">Filmo pavadinimas</label>
+                            <input type="text" name="search" placeholder="The Room" />
+                        </div>
                         <button class="search-btn" type="submit" disabled>Ieškoti</button>
                     </form>
                 </div>
@@ -32,6 +39,7 @@
                     />
                 </div>
             </main>
+            <p class="general-error error-msg"></p>
         </div>
 
         <script src="js/main.js" type="module"></script>
