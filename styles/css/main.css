@@ -154,10 +154,11 @@ form button:disabled {
 }
 
 .error-msg {
-  color: red;
+  color: #ff0000;
 }
 
 .general-error {
+  color: #f08080;
   font-size: 2rem;
   text-align: center;
 }

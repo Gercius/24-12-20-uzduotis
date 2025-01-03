@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+
+.error-msg {
+    color: $text-error;
+}
+
+.general-error {
+    color: $text-general-error;
+    font-size: $font-general-error;
+    text-align: center;
+}
+
+.searching-msg {
+    // position: absolute;
+    // top: 1rem;
+    // left: 0;
+}

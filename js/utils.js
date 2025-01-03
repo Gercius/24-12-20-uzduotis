@@ -5,9 +5,6 @@ export async function getMovie(title) {
     const generalErrorEl = document.querySelector(".general-error");
 
     try {
-        // Clear previous error messages if any
-        APIKeyErrorEl.textContent = "";
-        generalErrorEl.textContent = "";
         if (!APIKey) {
             APIKeyErrorEl.textContent = "API raktas yra būtinas!";
             throw new Error("API key is required!");
@@ -20,7 +17,7 @@ export async function getMovie(title) {
                 APIKeyErrorEl.textContent = "Netinkamas API raktas!";
                 throw new Error("Invalid API key");
             } else {
-                generalErrorEl.textContent = "Šiuo metu paslauga neprieinama, bandykite vėliau!";
+                generalErrorEl.textContent = "Šiuo metu paslauga neprieinama, bandykite vėliau.";
                 throw new Error(`Response status: ${response.status}`);
             }
         }
@@ -35,4 +32,9 @@ export async function getMovie(title) {
 
 export function capitalizeString(string) {
     return string[0].toUpperCase() + string.slice(1);
+}
+
+export function clearErrorMessages() {
+    document.querySelector(".general-error").textContent = "";
+    document.querySelector(".api-key-error").textContent = "";
 }
