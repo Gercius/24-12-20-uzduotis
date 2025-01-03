@@ -1,0 +1,68 @@
+@use "../abstracts" as *;
+
+.movie-card {
+    background-color: $bg-dark;
+    color: $text-light;
+    padding: 1rem;
+    margin: 0 auto;
+    border-radius: 20px;
+    max-width: 500px;
+
+    .title {
+        font-size: $font-h3;
+        column-gap: 0.25rem;
+        text-align: center;
+    }
+
+    .other-info {
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+
+    .poster {
+        margin: 1rem auto 0 auto;
+        border: 2px solid white;
+    }
+
+    .genre-wrapper {
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        &.hidden {
+            display: none;
+        }
+
+        .genre {
+            border: 2px solid white;
+            border-radius: 50px;
+            padding: 0.25rem 0.75rem;
+        }
+    }
+
+    .rating,
+    .plot-description,
+    .actors {
+        margin-top: 0.5rem;
+    }
+
+    .show-more {
+        display: block;
+        margin: 0.5rem auto;
+        padding: 0.4rem 0.75rem;
+        border: none;
+        border-radius: 7px;
+        background-color: $bg-orange;
+        color: $text-light;
+
+        &:hover {
+            background-color: $bg-orange-dark;
+        }
+
+        &.hidden {
+            display: none;
+        }
+    }
+}

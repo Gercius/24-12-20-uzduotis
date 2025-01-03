@@ -33,6 +33,11 @@ main {
     }
 
     .search-results {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
         .placeholder-img {
             margin-top: 2rem;
             border-radius: 20px;

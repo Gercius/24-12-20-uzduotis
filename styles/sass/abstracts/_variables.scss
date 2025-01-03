@@ -4,7 +4,7 @@
 $font-stack: system-ui, sans-serif;
 
 $font-h1: clamp(3rem, 10vw, 5rem);
-$font-h3: 2rem;
+$font-h3: 1.5rem;
 
 $font-p1: 1.25rem;
 
@@ -25,6 +25,7 @@ $text-general-error: #f08080;
     Backgrounds
 */
 
+$bg-dark: #3a3a3a;
 $bg-orange: #e6492a;
 $bg-orange-dark: #ad361e;
 $bg-disabled: gray;
@@ -32,4 +33,4 @@ $bg-disabled: gray;
 /*
     Container properties
 */
-$ctn-max-width: 1440px;
+$ctn-max-width: 1300px;

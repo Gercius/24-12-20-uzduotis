@@ -52,7 +52,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1300px;
   padding: 1rem;
 }
 
@@ -101,6 +101,12 @@ main .search h1 {
   font-size: clamp(3rem, 10vw, 5rem);
   color: #e6492a;
   font-weight: 500;
+}
+main .search-results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 main .search-results .placeholder-img {
   margin-top: 2rem;
@@ -153,6 +159,63 @@ form button:disabled {
   }
 }
 
+.movie-card {
+  background-color: #3a3a3a;
+  color: #ffffff;
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 20px;
+  max-width: 500px;
+}
+.movie-card .title {
+  font-size: 1.5rem;
+  column-gap: 0.25rem;
+  text-align: center;
+}
+.movie-card .other-info {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.movie-card .poster {
+  margin: 1rem auto 0 auto;
+  border: 2px solid white;
+}
+.movie-card .genre-wrapper {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.movie-card .genre-wrapper.hidden {
+  display: none;
+}
+.movie-card .genre-wrapper .genre {
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 0.25rem 0.75rem;
+}
+.movie-card .rating,
+.movie-card .plot-description,
+.movie-card .actors {
+  margin-top: 0.5rem;
+}
+.movie-card .show-more {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 0.4rem 0.75rem;
+  border: none;
+  border-radius: 7px;
+  background-color: #e6492a;
+  color: #ffffff;
+}
+.movie-card .show-more:hover {
+  background-color: #ad361e;
+}
+.movie-card .show-more.hidden {
+  display: none;
+}
+
 .error-msg {
   color: #ff0000;
 }
@@ -161,6 +224,11 @@ form button:disabled {
   color: #f08080;
   font-size: 2rem;
   text-align: center;
+}
+
+.searching-msg {
+  text-align: center;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

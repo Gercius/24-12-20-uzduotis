@@ -8,22 +8,20 @@ export function renderMovieCard(data) {
         const movieCardEl = document.createElement("article");
         movieCardEl.classList.add("movie-card");
 
-        // Title, Year
+        // Title
         const titleEl = document.createElement("h3");
         titleEl.classList.add("title");
         titleEl.textContent = data.Title;
-        const yearEl = document.createElement("span");
-        yearEl.classList.add("year");
-        yearEl.textContent = ` (${data.Year})`;
-        titleEl.appendChild(yearEl);
         movieCardEl.appendChild(titleEl);
 
         // Other info
         const otherInfoEl = document.createElement("p");
         otherInfoEl.classList.add("hidden", "other-info");
-        otherInfoEl.innerHTML = `<span>${capitalizeString(data.Type)}</span> • <span>${data.Rated}</span> • <span>${
-            data.Runtime
-        }</span>`;
+        // prettier-ignore
+        otherInfoEl.innerHTML = `
+                <span>${data.Year}</span> • <span>${capitalizeString(data.Type)}</span> • 
+                <span>${data.Rated}</span> • <span>${data.Runtime}</span>
+        `;
         movieCardEl.appendChild(otherInfoEl);
 
         // Poster
@@ -38,7 +36,6 @@ export function renderMovieCard(data) {
         // Genre/Genres
         const genreData = data.Genre.split(",");
         const genreWrapperEl = document.createElement("p");
-        genreWrapperEl.textContent = "Žanras: ";
         genreWrapperEl.classList.add("hidden", "genre-wrapper");
         genreData.forEach((genre) => {
             const genreEl = document.createElement("span");
